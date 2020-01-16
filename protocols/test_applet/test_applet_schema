@@ -1,0 +1,28 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/hotavocado/test-applet/master/protocols/test_applet/test_applet_context"
+    ],
+    "@type": "reproschema:ActivitySet",
+    "@id": "test_applet_schema",
+    "skos:prefLabel": "Test Applet for Samuel",
+    "skos:altLabel": "test_applet_schema",
+    "schema:description": "Applet for testing dropdown/select input",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "variableMap": [
+        {
+            "variableName": "test_activity",
+            "isAbout": "test_activity"
+        }
+    ],
+    "ui": {
+        "order": [
+            "test_activity"
+        ],
+        "shuffle": false,
+        "visibility": {
+            "test_activity": true
+        }
+    }
+}

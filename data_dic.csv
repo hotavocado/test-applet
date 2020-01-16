@@ -1,0 +1,3 @@
+Variable / Field Name,Section Header,Form Name,Form Display Name,Form Note,Field Type,multipleChoice,Field Label,"Choices, Calculations, OR Slider Labels",minVal,maxVal,Branching Logic (Show field only if...)
+select_example,Select Example:,test_activity,Test Activity,test select/dropdown input,dropdown,,"Since the last questionnaire, how many minutes did you do moderate activities (activities that make you breathe somewhat harder than usual such as playing tennis, bicycling, carrying light loads)","1, 5 | 2, 10 | 3, 20 | 4, 30 | 5, 40 | 6, 50 | 7, 60 or more",,,
+dummy_question,Dummy:,test_activity,Test Activity,test select/dropdown input,radio,,This is a dummy item.,"0, Okay",,,

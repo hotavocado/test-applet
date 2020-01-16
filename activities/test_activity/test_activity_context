@@ -1,0 +1,14 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "test_activity": "https://raw.githubusercontent.com/hotavocado/test-applet/master/activities/test_activity/items/",
+        "select_example": {
+            "@id": "test_activity:select_example",
+            "@type": "@id"
+        },
+        "dummy_question": {
+            "@id": "test_activity:dummy_question",
+            "@type": "@id"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "skos:altLabel": "dummy_question",
+    "preamble": {
+        "en": "Dummy:"
+    },
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "This is a dummy item."
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:value": 0,
+                "schema:name": "Okay",
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

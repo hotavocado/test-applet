@@ -1,0 +1,35 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/hotavocado/test-applet/master/activities/test_activity/test_activity_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "test_activity_schema",
+    "skos:prefLabel": "Test Activity",
+    "skos:altLabel": "test_activity_schema",
+    "schema:description": "test select/dropdown input",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "scoringLogic": {},
+    "variableMap": [
+        {
+            "variableName": "select_example",
+            "isAbout": "select_example"
+        },
+        {
+            "variableName": "dummy_question",
+            "isAbout": "dummy_question"
+        }
+    ],
+    "ui": {
+        "order": [
+            "select_example",
+            "dummy_question"
+        ],
+        "shuffle": false,
+        "visibility": {
+            "select_example": true,
+            "dummy_question": true
+        }
+    }
+}

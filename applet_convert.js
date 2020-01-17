@@ -27,7 +27,7 @@ let activityDisplayObj = {
 */
 
 //4. where are you hosting your images?
-let imagePath = 'https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/'
+let imagePath = 'https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/618x618/'
 
 /* ************ Constants **************************************************** */
 const csv = require('fast-csv');
@@ -305,7 +305,7 @@ function processRow(form, data){
                         let cnameList = cs[1];
                         choiceObj['schema:name'] = cnameList;
                         choiceObj['@type'] = "schema:option";
-                        choiceObj['schema:image'] = imagePath + cs[2] + '.svg';
+                        choiceObj['schema:image'] = imagePath + cs[2] + '.png';
                         choiceList.push(choiceObj);
                     } else {
                     // for no image, create name and value pair for each choice option

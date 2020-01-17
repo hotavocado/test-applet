@@ -18,7 +18,8 @@
             {
                 "schema:value": 0,
                 "schema:name": "Okay",
-                "@type": "schema:option"
+                "@type": "schema:option",
+                "schema:image": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F62A.svg"
             }
         ]
     }

@@ -26,6 +26,9 @@ let activityDisplayObj = {
 
 */
 
+//4. where are you hosting your images?
+let imagePath = 'https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/'
+
 /* ************ Constants **************************************************** */
 const csv = require('fast-csv');
 const fs = require('fs');
@@ -296,12 +299,22 @@ function processRow(form, data){
                 c.forEach(ch => { // ch = { value, name}
                     let choiceObj = {};
                     let cs = ch.split(', ');
-                    // create name and value pair for each choice option
-                    choiceObj['schema:value'] = parseInt(cs[0]);
-                    let cnameList = cs[1];
-                    choiceObj['schema:name'] = cnameList;
-                    choiceObj['@type'] = "schema:option";
-                    choiceList.push(choiceObj);
+                    // create name and value pair + image link for each choice option
+                    if (cs.length === 3) {
+                        choiceObj['schema:value'] = parseInt(cs[0]);
+                        let cnameList = cs[1];
+                        choiceObj['schema:name'] = cnameList;
+                        choiceObj['@type'] = "schema:option";
+                        choiceObj['schema:image'] = imagePath + cs[2] + '.svg';
+                        choiceList.push(choiceObj);
+                    } else {
+                    // for no image, create name and value pair for each choice option
+                        choiceObj['schema:value'] = parseInt(cs[0]);
+                        let cnameList = cs[1];
+                        choiceObj['schema:name'] = cnameList;
+                        choiceObj['@type'] = "schema:option";
+                        choiceList.push(choiceObj);
+                    }
 
                 });
                 // insert 'choices' key inside responseOptions of the item
